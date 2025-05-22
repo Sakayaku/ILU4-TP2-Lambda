@@ -25,11 +25,13 @@ public class main {
 		MyNat n2 = new MyNat(3);
 		System.out.println("Somme "+n1.add(n2)); // affiche 5
 		
-			list<String> l = null;
-			l.empty();
+			list<String> l= list.empty();
 			l = l.add("a").add("b").add("c");
-			System.out.println("longueur:"+l.length());
-
+			System.out.println("longueur: "+l.length());
+			list<String> l2= list.empty();
+			l2 = l2.add("d").add("e").add("f");
+			list<String> l3 = (list<String>) l.append(l2);
+			System.out.println("longeur: "+l3.length());
 
 	}
 
